@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+    color: #222222;
+}
+
+.descricao {
+    margin-bottom: 24px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333333;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:disabled,
+input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#mensagem {
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #222222;
+}
+
+#tentativas {
+    color: #555555;
+}
